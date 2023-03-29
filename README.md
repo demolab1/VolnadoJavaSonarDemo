@@ -1,4 +1,6 @@
 # Vulnado - Intentionally Vulnerable Java Application
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fdemolab1%2FVolnadoJavaSonarDemo.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fdemolab1%2FVolnadoJavaSonarDemo?ref=badge_shield)
+
 
 This application and exercises will take you through some of the OWASP top 10 Vulnerabilities and how to prevent them.
 
@@ -23,3 +25,7 @@ The docker network created by `docker-compose` maps pretty well to a multi-tier 
 * [XSS - Cross Site Scripting](exercises/02-xss.md)
 * [SSRF - Server Side Request Forgery](exercises/03-ssrf.md)
 * [RCE - Remote Code Execution & Reverse Shell](exercises/04-rce-reverse-shell.md)
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fdemolab1%2FVolnadoJavaSonarDemo.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fdemolab1%2FVolnadoJavaSonarDemo?ref=badge_large)
