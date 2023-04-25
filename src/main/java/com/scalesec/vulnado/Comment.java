@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.UUID;
 
 public class Comment {
-  public String id, username, body;
+//  public String id, username, body;
   public Timestamp created_on;
 
   public Comment(String id, String username, String body, Timestamp created_on) {
