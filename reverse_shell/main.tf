@@ -4,13 +4,13 @@ provider "aws"  {
 
 
 
-resource "aws_internet_gateway" "gw" {
-  vpc_id = "${aws_vpc.main.id}"
+# resource "aws_internet_gateway" "gw" {
+ # vpc_id = "${aws_vpc.main.id}"
 
-  tags = {
-    Name = "tmp_vulnado_rev_shell_igw"
-  }
-}
+  #tags = {
+ #   Name = "tmp_vulnado_rev_shell_igw"
+ # }
+#}
 
 resource "aws_route_table" "r" {
   vpc_id = "${aws_vpc.main.id}"
