@@ -30,7 +30,7 @@ public class Postgres {
     }
     public static void setup(){
         try {
-            System.out.println("Setting up Database...");
+//            System.out.println("Setting up Database...");
             Connection c = connection();
             Statement stmt = c.createStatement();
 
