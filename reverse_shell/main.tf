@@ -32,42 +32,7 @@ resource "aws_route_table_association" "assoc" {
   route_table_id = "${aws_route_table.r.id}"
 }
 
-resource "aws_security_group" "sg" {
-  name        = "tmp_vulnado_rev_shell_sg"
-  vpc_id      = "${aws_vpc.main.id}"
 
-  ingress {
-    protocol    = "tcp"
-    from_port   = 22
-    to_port     = 22
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-
-  ingress {
-    protocol    = "tcp"
-    from_port   = 443
-    to_port     = 443
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-
-  egress {
-    from_port = 0
-    to_port   = 0
-    protocol  = "-1"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-}
-
-data "aws_ami" "amznlinux" {
-  most_recent = true
-  owners = ["amazon"]
-
-  filter {
-    name   = "name"
-    values = ["amzn2-ami-hvm-2.0.20181114-x86_64-gp2"]
-
-  }
-}
 
 
 resource "aws_key_pair" "attacker" {
